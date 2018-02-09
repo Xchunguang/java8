@@ -9,6 +9,9 @@ public class MethodUse {
 	public static void main(String[] args) {
 		//构造器引用
 		Car car = Car.create( Car::new );
+//		Car car = Car.create(()->{
+//			return new Car();
+//		});
 		List< Car > cars = Arrays.asList( car );
 		System.out.println(cars.size());
 		
